@@ -22,11 +22,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My message, and why:
-
+# 1. In: My name, "Alexis"
+# 2. Process: print ("Alexis")
+# 3. Out: printing Alexis 5 times 
+# 4. My message, and why:I have printed "hello world", "how to print in pthyon" and "Alexis" 5 times
 
 # Your code below
 print("Alexis")
