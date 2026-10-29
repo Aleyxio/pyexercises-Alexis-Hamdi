@@ -26,10 +26,34 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
+# 1. In: 
 # 2. Process:
 # 3. Out:
 # 4. What my list is about, and what I computed from it:
 
 
 # Your code below
+number_1 = 4
+number_2 = 3
+number_3 = 6
+number_4 = 9
+number_5 = 8
+number_6 = 11
+
+print(number_1)
+print(number_2)
+print(number_3)
+print(number_4)
+print(number_5)
+print(number_6)
+
+list = [4, 5, 6, 7, 8, 9, 10, 11, 2, 1]
+
+print(list)
+print(list[3])
+
+list.sort()
+print("Sorted list:", list)
+
+list.pop()
+print("List after removing last item:", list)
