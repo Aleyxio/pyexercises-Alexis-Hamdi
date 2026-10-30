@@ -26,17 +26,17 @@ DELIVERABLE
 """
 
 # 1. In: the list of eight monthly ETF investments in euros, list from exercise 4.0.
-# 2. Process: The program displays the investments in four different orders: 
-#   reversed list, ascending order, descending order and starting from April.
-# 3. Out: The reversed list, ascending order, descending order, starting from April 
-#   then the original list at the last line (4 lines of orders and 1 original line).
+# 2. Process: the program displays the investments in four different orders: 
+#    reversed list, ascending order, descending order and starting from April.
+# 3. Out: the reversed list, ascending order, descending order, starting from April 
+#    then the original list at the last line (4 lines of orders and 1 original line).
 # 4. My four orders, and which ones modify the original:
-#   The ascending and descending orders, the reversed list and the starting from April, 
-#   none of them changes the original list because I use sorted() and slicing.
-#   I used sorted() and slicing because they create new lists
-#   without changing my original investments.
-#   I avoided sort() and reverse() because they modify the
-#   original list directly, which I want to keep for future use.
+#    the ascending and descending orders, the reversed list and the starting from April, 
+#    none of them changes the original list because I use sorted() and slicing.
+#    I used sorted() and slicing because they create new lists
+#    without changing my original investments.
+#    I avoided sort() and reverse() because they modify the
+#    original list directly, which I want to keep for future use.
 
 # Your code below
 
