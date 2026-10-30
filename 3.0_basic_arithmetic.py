@@ -24,13 +24,13 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: The user enters two investment amounts.
-# 2. Process: The program calculates four basic operations: +, -, * and /.
-# 3. Out: The four results are displayed in the terminal, per operation.
+# 1. In: the user enters two investment amounts.
+# 2. Process: the program calculates four basic operations: +, -, * and /.
+# 3. Out: the four results are displayed in the terminal, per operation.
 # 4. If the second number is zero, it displays a message: 
-# "Division: Cannot divide by zero.", instead of crashing.
-# I chose this solution because the user can still see the other three results 
-# without the program crashing.
+#    "division: Cannot divide by zero.", instead of crashing.
+#    I chose this solution because the user can still see the other three results 
+#    without the program crashing.
 
 # Your code below
 # I ask the user to enter two amounts.
