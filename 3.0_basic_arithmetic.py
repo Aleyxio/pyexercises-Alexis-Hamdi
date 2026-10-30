@@ -24,33 +24,32 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: numbers, addition, division, 
-# 2. Process:
-# 3. Out:
-# 4. What happens when the second number is zero, and why:
-
+# 1. In: The user enters two investment amounts.
+# 2. Process: The program calculates four basic operations: +, -, * and /.
+# 3. Out: The four results are displayed in the terminal, per operation.
+# 4. If the second number is zero, it displays a message: 
+# "Division: Cannot divide by zero.", instead of crashing.
+# I chose this solution because the user can still see the other three results 
+# without the program crashing.
 
 # Your code below
-number_1 = int(input("Enter number 1: "))
-number_2 = int(input("Enter number 2: "))
+# I ask the user to enter two amounts.
+a = float(input("First investment amount: "))
+b = float(input("Second investment amount: "))
 
-print("The number 1 is: ", number_1)
-print("The number 1 is: ", number_2)
+# I calculate and display the four operations.
+print(f"Addition: {a + b}")
+print(f"Subtraction: {a - b}")
+print(f"Multiplication: {a * b}")
 
-# addition of two numbers
-sum = number_1 + number_2
-print("The sum of two number is:", sum)
-
-diff = number_2 - number_1
-print("The difference of two number is: ", diff)
-
-# product of two numbers
-product = number_1 * number_2
-print("The roduct of two number is: ", product)
-
-# division o two numbers
-if number_2 != 0:
-    div = number_1 / number_2
-    print("the division of two numbers is: ", div)
+# I check if division is possible.
+if b != 0:
+    print(f"Division: {a / b}")
 else:
-    print("The second number is 0")
+    print("Division: Cannot divide by zero.")
+
+# CHECK YOURSELF
+# With 7 and 2, division gives 3.5 because / is normal division.
+# The // operator would give 3 because it uses floor division.
+# With 7 and 0, the program displays "Division: Cannot divide by zero.",
+#   instead of crashing.
