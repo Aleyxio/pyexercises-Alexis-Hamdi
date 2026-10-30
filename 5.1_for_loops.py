@@ -24,20 +24,41 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: A list of eight monthly ETF investments in euros, from Exercise 4.0
+# 2. Process: The program goes through each month and adds 
+#   the investment to a running total.
+# 3. Out: Eight lines showing the month (from 1 to 8), the investment amount, 
+#   and the total invested so far.
 # 4. What I compute for each item, and why it is worth showing:
-
+# I calculate the total invested after each month 
+# because I want to see how my investments grow over time. 
+# This helps me track how much money I have invested.
 
 # Your code below
 
-names = ["Alexis, Jean, Louis, Eve, Franck, Josh, Alexandre, David"]
+# I use the same ETF investments from Exercise 4.0.
+investments = [120, 180, 150, 200, 220, 170, 250, 210]
 
-print("List of names and their lenghts:")
+# I start with zero euros invested.
+total = 0
 
-i = "Alexis"
+# I go through each month and calculate the total invested.
+# I use start=1 to make the months start from 1 instead of 0.
+# This avoids an off-by-one error and keeps the month numbers correct.
+for month, amount in enumerate(investments, start=1):
+    total = total + amount
+    print(f"Month {month}: {amount} euros, Total invested: {total} euros")
 
-for i in names:
-    lenght = len(i)
-    print(f"Name: ", i, "Lenght:" , lenght)
+# CHECK IT YOURSELF
+
+# My original list contains 8 monthly investments.
+# The program displayed exactly 8 lines, as expected.
+
+# I checked the first three months by hand:
+# Month 1: 120 euros.
+# Month 2: 120 + 180 = 300 euros.
+# Month 3: 300 + 150 = 450 euros.
+
+# The results match my calculations.
+# The final total is 1500 euros after 8 months.
+# No month was skipped or repeated.
