@@ -26,14 +26,14 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: A list of eight monthly investment amounts in euros.
-# 2. Process: The program selects one amount, sorts the list, 
-#   and calculates the total investment.
-# 3. Out: The complete list, one monthly investment, the sorted list,
-#   and the total amount invested.
+# 1. In: a list of eight monthly investment amounts in euros.
+# 2. Process: the program selects one amount, sorts the list, 
+#    and calculates the total investment.
+# 3. Out: the complete list, one monthly investment, the sorted list,
+#    and the total amount invested.
 # 4. What my list is about, and what I computed from it: 
-# I chose monthly ETF investments because I am interested in asset management. 
-# I calculate the total to see how much money I invested over eight months.
+#    I chose monthly ETF investments because I am interested in asset management. 
+#    I calculate the total to see how much money I invested over eight months.
 
 # Your code below
 # I create a list of my monthly ETF investments.
