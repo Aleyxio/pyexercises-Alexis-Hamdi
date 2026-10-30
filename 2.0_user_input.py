@@ -26,8 +26,8 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: The user enters a stock name and the number of shares they own.
-# 2. Process: The program changes the share quantity into an integer and
+# 1. In: the user enters a stock name and the number of shares they own.
+# 2. Process: the program changes the share quantity into an integer and
 #    multiplies it by an example share price of 75 euros.
 # 3. One sentence shows the stock name, the number of shares,
 #    and the estimated value of the position.
