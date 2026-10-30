@@ -23,18 +23,18 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: A dictionary with information about an ETF investment with 6 fields.
-# 2. Process: The program reads the information, updates the price, removes one field, 
-#   and calculates the investment value.
-# 3. Out: Value read, changed and removed. The program displays the ETF information
+# 1. In: a dictionary with information about an ETF investment with 6 fields.
+# 2. Process: the program reads the information, updates the price, removes one field, 
+#    and calculates the investment value.
+# 3. Out: value read, changed and removed. The program displays the ETF information
 #   (with 5 fields because "Broker" was removed) and the updated investment value.
 # 4. My object, my six fields, and why those: 
-#   I chose an ETF investment because I am interested in asset management.
-#   My six fields are the ETF name, number of shares, price, currency, asset class, 
-#   and broker. I use them to identify my investment, calculate its value, 
-#   and know where it is held.
-#   # I remove the broker when preparing a simple investment summary 
-#   because I only need the financial information.
+#    I chose an ETF investment because I am interested in asset management.
+#    My six fields are the ETF name, number of shares, price, currency, asset class, 
+#    and broker. I use them to identify my investment, calculate its value, 
+#    and know where it is held.
+#    I remove the broker when preparing a simple investment summary 
+#    because I only need the financial information.
 
 
 # Your code below
