@@ -155,3 +155,9 @@ while count < 3:        # condition
 ```
 
 What is the name of the variable that controls how many times the loop runs?
+
+I understood that a while loop repeats the same action while a condition is true, 
+and that I need a limit to avoid an infinite loop.
+
+I used this knowledge in my exercise to ask the user a question until 
+they answer "yes" or reach the maximum of 3 attempts.
