@@ -22,19 +22,18 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: My message, "I love Python" and 5 times it is repeated
-# 2. Process: 
-# What does the code do? It repeats the "I love Python" 5 times 
-# and it adds something in front of the sentence (a number).
-# Range, through the start of 1 and stop of 6 (or whatever number) at the stop 
-# this count just before stop.
+# 1. In: my message, "I love Python" and 5 times it is repeated.
+# 2. Process: what does the code do? It repeats the "I love Python" 5 times 
+#    and it adds something in front of the sentence (a number).
+#    Range, through the start of 1 and stop of 6 (or whatever number) at the stop 
+#    this count just before stop.
 # 3. Out: printing 5 lines, each one starting with a number (1 to 5)
-# followed by "I love Python" (5 times).
+#    followed by "I love Python" (5 times).
 # 4. My message, and why:
-# I have printed "I love Python", 
-# Because I never did this in my life.
-# I really believe that we can create something helpful 
-# and truly unbelievable with Python. There's so much to learn!
+#    I have printed "I love Python", 
+#    Because I never did this in my life.
+#    I really believe that we can create something helpful 
+#    and truly unbelievable with Python. There's so much to learn!
 
 # Your code below
 # The first line counts from 1 and stops before 6 (so the last number is 5).
