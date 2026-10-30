@@ -24,10 +24,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: A list of eight monthly ETF investments in euros, from Exercise 4.0
-# 2. Process: The program goes through each month and adds 
+# 1. In: a list of eight monthly ETF investments in euros, from Exercise 4.0
+# 2. Process: the program goes through each month and adds 
 #   the investment to a running total.
-# 3. Out: Eight lines showing the month (from 1 to 8), the investment amount, 
+# 3. Out: eight lines showing the month (from 1 to 8), the investment amount, 
 #   and the total invested so far.
 # 4. What I compute for each item, and why it is worth showing:
 # I calculate the total invested after each month 
