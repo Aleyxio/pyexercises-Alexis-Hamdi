@@ -18,6 +18,15 @@ print()
 
 What is the first argument of the `print()` function?
 
+Answer to the tutor's question: the first argument of `print()` is what
+we put inside its parentheses. It is what `print()` displays on the
+screen. In my program, the argument is `f"{number}. I love Python"`,
+which displays "1. I love Python", then "2. I love Python", and so on.
+
+Without the `f`, Python would display the text exactly as written:
+"{number}. I love Python". With the `f`, Python replaces `{number}` with
+its value, so each line starts with its number.
+
 ---
 ## 2026-10-29 10:18, in .
 
@@ -127,3 +136,22 @@ def sort_list(input_list):
 ```
 
 What is the difference between `sorted()` and `list.sort()` in terms of what they return?
+
+---
+## 2026-10-29 11:45, in .
+
+**Me:** how to write a while loop in python
+
+**Tutor:**
+
+A while loop runs a block of code as long as a condition is True.
+
+```python
+# TODO: change the condition so the loop stops after 3 prints
+count = 0
+while count < 3:        # condition
+    print("tick")       # block
+    count = count + 1   # update
+```
+
+What is the name of the variable that controls how many times the loop runs?
