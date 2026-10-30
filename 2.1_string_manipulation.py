@@ -24,15 +24,15 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: Asked the user to write a sentence.
-# 2. Process: Used four methods to change the sentence: 
-#   strip(), lower(), swapcase(), and replace().
-# 3. Out: Four different results, 4 different lines, each with the transformation.
+# 1. In: asked the user to write a sentence.
+# 2. Process: used four methods to change the sentence: 
+#    strip(), lower(), swapcase(), and replace().
+# 3. Out: four different results, 4 different lines, each with the transformation.
 # 4. My four transformations, and when each is useful: 
-# strip(): I use it to remove spaces that I don't need.
-# lower(): I use it to make the text easier to read and compare.
-# swapcase(): I chose it to see how capital letters can change.
-# replace(): I use it when I need to change a meeting location from London to Tokyo.
+#    strip(): I use it to remove spaces that I don't need.
+#    lower(): I use it to make the text easier to read and compare.
+#    swapcase(): I chose it to see how capital letters can change.
+#    replace(): I use it when I need to change a meeting location from London to Tokyo.
 
 # Your code below
 
