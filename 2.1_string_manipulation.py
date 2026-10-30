@@ -24,10 +24,43 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: The name and the age
-# 2. Process: adding my name and age in a sentence
-# 3. Out: my name and age 
-# 4. My four transformations, and when each is useful: I got my name and age and then printed the whole sentence, which is great!
-
+# 1. In: Asked the user to write a sentence.
+# 2. Process: Used four methods to change the sentence: 
+#   strip(), lower(), swapcase(), and replace().
+# 3. Out: Four different results, 4 different lines, each with the transformation.
+# 4. My four transformations, and when each is useful: 
+# strip(): I use it to remove spaces that I don't need.
+# lower(): I use it to make the text easier to read and compare.
+# swapcase(): I chose it to see how capital letters can change.
+# replace(): I use it when I need to change a meeting location from London to Tokyo.
 
 # Your code below
+
+# First, I ask the user to write a sentence.
+sentence = input("Write a sentence: ")
+
+# I use strip() to remove extra spaces at the beginning and end.
+# I use lower() to change all letters into lowercase.
+# I use swapcase() to change uppercase letters into lowercase and the opposite.
+# I use replace() to change "London" into "Tokyo" in the sentence.
+print(sentence.strip())
+print(sentence.lower())
+print(sentence.swapcase())
+print(sentence.replace("London", "Tokyo"))
+# Finally, I display the four different results.
+
+# CHECK YOURSELF
+# sentence test: " hi i am From London "
+# Strip:     (hi i am From London)
+# Lower:     ( hi i am from london )
+# Swapcase:  ( HI I AM fROM lONDON )
+# Replace:   ( hi i am From Tokyo )
+
+# Strip(): is as expected because it removed the spaces 
+#   at both ends but kept the sentence.
+# Lower(): is as expected because all capital letters became lowercase 
+#   while spaces stayed.
+# Swapcase(): is as expected because uppercase letters became lowercase 
+#   and lowercase became uppercase.
+# Replace(): is as expected because London changed to Tokyo 
+#   while the rest of the sentence stayed the same.
