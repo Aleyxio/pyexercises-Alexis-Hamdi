@@ -24,18 +24,18 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: The user enters the number of transactions to check (N).
-# 2. Process: The program checks each number from 1 to N
-# and uses % 2 to see if it is odd or even.
-# 3. Out: Each transaction is assigned to odd or even 
-# and is counted from Transaction 1 to Transaction N.
+# 1. In: the user enters the number of transactions to check (N).
+# 2. Process: the program checks each number from 1 to N
+#    and uses % 2 to see if it is odd or even.
+# 3. Out: each transaction is assigned to odd or even 
+#    and is counted from Transaction 1 to Transaction N.
 # 4. For 0, I display a message because there are no transactions to check.
-# For negative numbers, there's a message: "Please enter a positive number".
-# a warning because a number of transactions cannot be negative.
-# For 5000, I display a warning because too many results are hard to read.
-# The program is limited to 100 transactions, if > 100, then a message like:
-# "Too many transactions. Maximum is 100."
-# I chose a limit of 100 to keep the results short and easy to read.
+#    For negative numbers, there's a message: "Please enter a positive number".
+#    a warning because a number of transactions cannot be negative.
+#    For 5000, I display a warning because too many results are hard to read.
+#    The program is limited to 100 transactions, if > 100, then a message like:
+#    "Too many transactions. Maximum is 100."
+#    I chose a limit of 100 to keep the results short and easy to read.
 
 # Your code below
 
