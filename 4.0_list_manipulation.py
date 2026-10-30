@@ -26,34 +26,50 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: 
-# 2. Process:
-# 3. Out:
-# 4. What my list is about, and what I computed from it:
-
+# 1. In: A list of eight monthly investment amounts in euros.
+# 2. Process: The program selects one amount, sorts the list, 
+#   and calculates the total investment.
+# 3. Out: The complete list, one monthly investment, the sorted list,
+#   and the total amount invested.
+# 4. What my list is about, and what I computed from it: 
+# I chose monthly ETF investments because I am interested in asset management. 
+# I calculate the total to see how much money I invested over eight months.
 
 # Your code below
-number_1 = 4
-number_2 = 3
-number_3 = 6
-number_4 = 9
-number_5 = 8
-number_6 = 11
+# I create a list of my monthly ETF investments.
+investments = [120, 180, 150, 200, 220, 170, 250, 210]
 
-print(number_1)
-print(number_2)
-print(number_3)
-print(number_4)
-print(number_5)
-print(number_6)
+# I display the complete list.
+print("Monthly investments:", investments)
 
-list = [4, 5, 6, 7, 8, 9, 10, 11, 2, 1]
+# I select the fourth month using [3] because Python starts counting from 0.
+print("April investment:", investments[3])
 
-print(list)
-print(list[3])
+# I sort the amounts from smallest to largest.
+print("Sorted investments:", sorted(investments))
 
-list.sort()
-print("Sorted list:", list)
+# I calculate the total amount invested.
+print("Total invested:", sum(investments), "euros")
 
-list.pop()
-print("List after removing last item:", list)
+# First three months: 120 + 180 + 150 = 450 euros.
+print("Test first 3 months:", sum(investments[:3]))
+
+# CHECK IT YOURSELF
+# My list contains eight monthly investments:
+# [120, 180, 150, 200, 220, 170, 250, 210]
+
+# After sorting from smallest to largest, I get:
+# [120, 150, 170, 180, 200, 210, 220, 250]
+
+# Calculated the total of the first three months.
+# 120 + 180 + 150 = 450 euros.
+# Python returned the results, as expected.
+
+# Then, calculated the total of all eight investments.
+# 120 + 180 + 150 + 200 + 220 + 170 + 250 + 210 = 1500 euros.
+
+# Finally, I calculated the average monthly investment by hand.
+# 1500 / 8 = 187.5 euros.
+
+# These results show that the total and average calculations
+# and the investments are sorted in ascending order.
