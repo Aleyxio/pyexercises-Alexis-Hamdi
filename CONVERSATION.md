@@ -161,3 +161,42 @@ and that I need a limit to avoid an infinite loop.
 
 I used this knowledge in my exercise to ask the user a question until 
 they answer "yes" or reach the maximum of 3 attempts.
+---
+## 2026-11-02 17:47, in .
+
+**Me:** How to add numbers in python
+
+**Tutor:**
+
+Adding numbers in Python is done with the `+` operator.
+
+```python
+# TODO: complete this function
+def add_numbers(a, b):
+    return # TODO: add a and b here
+```
+
+What is the return value when you call `add_numbers(3, 5)`?
+
+---
+## 2026-11-02 17:47, in .
+
+**Me:** How to compute a ctr
+
+**Tutor:**
+
+Computing Click-Through Rate (CTR) in Python.
+
+CTR is calculated as:
+(number of clicks / number of impressions) * 100
+
+Here’s a function to compute CTR:
+
+```python
+def compute_ctr(clicks, impressions):
+    # TODO: Add a check to avoid division by zero
+    ctr = (clicks / impressions) * 100
+    return ctr
+```
+
+Question: What built-in function can you use to ensure `clicks` and `impressions` are numbers before computing CTR?
