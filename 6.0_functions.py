@@ -1,110 +1,129 @@
-"""Exercise 6.0 - Naming a piece of work
+"""Exercise 6.0 — Naming a piece of work
 
-Data (from exercise 4.0): a list of how many minutes I studied each day.
-Example: [45, 60, 0, 30, 90, 120, 15]
+WHAT THE PROGRAM MUST DO
+    Write a function that computes something useful about the list you built in exercise
+    4.0, then call it three times with different inputs and display the three results.
+
+ANSWER THESE FIRST, in comments at the top of your file
+    1. What goes in?  (what your function receives)
+    2. What happens to it?
+    3. What comes out?  (what your function returns)
+    4. What is your function called, and does its name say what it does without reading
+       the code?
+
+WHAT THE AI CANNOT KNOW
+    What is worth computing about your data, and what to call it. A function named
+    "process" or "do_stuff" fails this exercise even if it works.
+
+    Your function must RETURN its result, not print it. Find out why that difference
+    matters and write the reason in a comment. It is the whole point of the exercise.
+
+CHECK IT YOURSELF
+    Call your function with an empty list. Note what happens. Then decide whether that
+    behaviour is acceptable, and say so in a comment.
+
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
 # 1. What goes in?
-#    - daily_minutes: a list of integers, one per day, = minutes studied.
-#    - goal_minutes:  an integer, the daily target I want to reach.
-#
+# My function receives two inputs:
+# - investments: my list of monthly ETF investment amounts.
+# - goal_amount: the minimum amount I want to invest each month.
+
 # 2. What happens to it?
-#    The function walks through the days in order and counts how many days
-#    IN A ROW reached the goal. Each time a day misses the goal, the current
-#    streak resets to 0. It keeps the best streak seen so far.
-#    (An average tells me "how much"; a streak tells me "how regular" -
-#    and regularity is what actually builds a study habit.)
-#
+# I use a for loop to check each monthly investment.
+# If I reach my goal, my streak increases by 1.
+# If I invest less than my goal, my streak goes back to 0.
+# I keep the longest streak found during the loop.
+
 # 3. What comes out?
-#    One integer: the length of the longest streak of consecutive days
-#    where minutes studied >= goal_minutes.
-#
+# The function returns one integer showing the longest
+# number of consecutive months when I reached my goal.
+
 # 4. What is it called?
-#    longest_goal_streak(daily_minutes, goal_minutes)
-#    Yes: reading the name alone you know it returns the "longest streak"
-#    of days that met a "goal". No need to open the code.
-#
-# ---------------------------------------------------------------------------
+# I called my function longest_investment_streak.
+# I chose this name because it clearly explains
+# what my function calculates.
+
 # WHY RETURN AND NOT PRINT?
-# ---------------------------------------------------------------------------
-# print() only SHOWS a value on the screen, then the value is gone: the
-# function itself gives back None. Nothing else in the program can use it.
-# return HANDS the value back to the caller, so the result can be:
-#   - stored in a variable,
-#   - compared (e.g. "is this week's streak better than last week's?"),
-#   - passed to another function, tested with assert, saved to a file...
-# A function that prints decides FOR the caller what to do with the result.
-# A function that returns lets the caller decide. That makes it reusable.
-# Proof: see the "return vs print" demo at the bottom of this file.
-# ---------------------------------------------------------------------------
+# I use return because I want to reuse my result later.
+# For example, I can save it or compare different investment goals.
+# print only displays a value, while return gives it back to my code.
 
 
-# ---- The function ---------------------------------------------------------
-def longest_goal_streak(daily_minutes, goal_minutes):
-    """Return the longest number of consecutive days with minutes >= goal."""
-    best_streak = 0      # best streak found so far
-    current_streak = 0   # streak we are currently counting
 
-    for minutes in daily_minutes:
-        if minutes >= goal_minutes:
-            # Goal reached: the streak continues
+# Your code below
+
+# MY FUNCTION
+
+# This function calculates my longest monthly investment streak.
+def longest_investment_streak(investments, goal_amount):
+
+    # I start both values at 0 before checking my investments.
+    best_streak = 0
+    current_streak = 0
+
+    # I check each monthly investment using a for loop.
+    for amount in investments:
+
+        # If I reach my goal, I add 1 to my current streak.
+        if amount >= goal_amount:
             current_streak += 1
+
+            # I keep the highest streak found so far.
             best_streak = max(best_streak, current_streak)
+
         else:
-            # Goal missed: the streak is broken, start again from zero
+            # If I miss my goal, my current streak goes back to 0.
             current_streak = 0
 
-    return best_streak   # RETURN the result, never print it here
+    # I return the result so I can use it outside the function.
+    return best_streak
 
+# MY DATA FROM EXERCISE 4.0
 
-# ---- My data from exercise 4.0 --------------------------------------------
-study_minutes = [45, 60, 0, 30, 90, 120, 15, 60, 75, 80, 50, 10, 0, 95]
+# This is my list of monthly ETF investments.
+investments = [120, 180, 150, 200, 220, 170, 250, 210]
 
+# THREE CALLS WITH DIFFERENT INPUTS
 
-# ---- Three calls with different inputs ------------------------------------
-# Call 1: same data, an easy goal (30 min/day)
-easy_streak = longest_goal_streak(study_minutes, 30)
+# Test 1: I check my streak with a monthly goal of 150.
+streak_150 = longest_investment_streak(investments, 150)
 
-# Call 2: same data, an ambitious goal (60 min/day)
-hard_streak = longest_goal_streak(study_minutes, 60)
+# Test 2: I increase my monthly goal to 200.
+streak_200 = longest_investment_streak(investments, 200)
 
-# Call 3: a different list (an exam week) with a 60 min/day goal
-exam_week = [120, 90, 60, 75, 100, 30, 150]
-exam_streak = longest_goal_streak(exam_week, 60)
+# Test 3: I use another list with a monthly goal of 200.
+other_investments = [250, 220, 180, 240, 260, 300]
+other_streak = longest_investment_streak(other_investments, 200)
 
+# DISPLAY MY RESULTS
 
-# ---- Display the three results --------------------------------------------
-# Printing happens HERE, outside the function: the caller decides how to show it.
-print(f"Longest streak at >= 30 min/day : {easy_streak} days")
-print(f"Longest streak at >= 60 min/day : {hard_streak} days")
-print(f"Exam week streak at >= 60 min   : {exam_streak} days")
+# I display my three results to compare my investment streaks.
+print(f"Longest streak with a goal of 150: {streak_150} months")
+print(f"Longest streak with a goal of 200: {streak_200} months")
+print(f"Other investment streak: {other_streak} months")
 
+# CHECK WITH AN EMPTY LIST
 
-# ---- Bonus: using the returned values (impossible with print) -------------
-# Because the function RETURNS numbers, I can compare and compute with them.
-if exam_streak > hard_streak:
-    gain = exam_streak - hard_streak
-    print(f"Exam week beat my usual record by {gain} day(s)!")
+# I want to check what happens if my investment list is empty.
+empty_result = longest_investment_streak([], 200)
 
+print(f"Empty list result: {empty_result}")
 
-# ---- Demo: return vs print ------------------------------------------------
-def longest_goal_streak_printing(daily_minutes, goal_minutes):
-    """Bad version on purpose: prints instead of returning."""
-    print(longest_goal_streak(daily_minutes, goal_minutes))
-
-value = longest_goal_streak_printing(study_minutes, 30)   # shows 4 on screen...
-print("Value received from the printing version:", value)  # ...but value is None
-# -> 'value' is None: the number was shown but lost. I could not compare it,
-#    add it, or test it. That is exactly why the function must RETURN.
-
-
-# ---------------------------------------------------------------------------
-# CHECK IT YOURSELF: empty list
-# ---------------------------------------------------------------------------
-empty_result = longest_goal_streak([], 60)
-print(f"Empty list -> {empty_result}")
-# What happens: no crash. The loop never runs, so the function returns 0.
-# Is it acceptable? YES. With no days recorded, there is no streak at all,
-# so 0 is the honest answer. (An average function would crash here with
-# ZeroDivisionError - one more reason I chose a streak over an average.)
+# The function returns 0 because there are no investments to check.
+# I think this is correct because no streak can exist without data.
+# My program also works without crashing.
 assert empty_result == 0
+
+# CHECK IT YOURSELF
+
+# I decided to verify my calculation using my first three investments.
+# My first three monthly amounts are 120, 180 and 150.
+# I use a monthly goal of 150.
+
+# I calculated the result manually:
+# Month 1: 120 is below my goal, so my streak is 0.
+# Month 2: 180 reaches my goal, so my streak becomes 1.
+# Month 3: 150 reaches my goal, so my streak becomes 2.
